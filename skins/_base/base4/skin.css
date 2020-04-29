@@ -59,11 +59,11 @@ BODY									{	margin:0px; 	}
 #skin_spacing_top_row .DwtLinkButtonDropDownArrowRow	{	background-color:@SkinTopRowColor@; 	}
 
 /** Logo displayed in the app **/
-#skin_spacing_logo						{}
-#skin_container_logo					{	width:@LogoWidth@; 	}
-	
+#skin_container_logo					{	 	}
+#skin_spacing_logo {width: 100%;}
+
 /** Toast box **/
-#skin_container_toast					{	width:69%; height:69%; 	}
+#skin_container_toast					{	width:75%; height:75%; background: red	}
 	
 /** Search box **/	
 #skin_spacing_search,
