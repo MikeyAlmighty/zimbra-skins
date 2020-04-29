@@ -61,7 +61,8 @@ BODY									{	margin:0px; 	}
 /** Logo displayed in the app **/
 #skin_container_logo					{	 	}
 #skin_spacing_logo {width: 100%;}
-
+/* .ImgAppBanner			{	background-repeat:no-repeat; @AppBanner@	} */
+#ff_header_white {background:@AppBanner@; background-repeat: round;}
 /** Toast box **/
 #skin_container_toast					{	width:75%; height:75%; background: red	}
 	
@@ -373,7 +374,7 @@ BODY									{	margin:0px; 	}
 
 /** Logo Images **/
 .center-small .ImgLoginBanner,
-.ImgAppBanner			{	background-repeat:no-repeat; @AppBanner@	}
+/* .ImgAppBanner			{	background-repeat:no-repeat; @AppBanner@	} */
 .ImgLoginBanner			{	background-repeat:no-repeat; @LoginBannerPosition@ @LoginBanner@	}
 #IFDEF MSIE
 #skin_container_logo A, #skin_container_logo A:hover, #skin_container_logo A:link {
@@ -398,6 +399,7 @@ BODY									{	margin:0px; 	}
 
 .BannerTextUser {
 	overflow:hidden !important;
+	color: white;
 }
 .BannerTextUserOffline {
 	text-align:left !important;
