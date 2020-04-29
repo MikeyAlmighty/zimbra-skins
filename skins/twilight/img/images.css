@@ -1,0 +1,8 @@
+.ImgFastFwdArrowSmall {background:url('@AppContextPath@/skins/twilight/img/zimbra.png?v=@jsVersion@') 0px 0px no-repeat;width:10px !important;height:9px !important;overflow:hidden;}
+.ImgRefreshAll {background:url('@AppContextPath@/skins/twilight/img/zimbra.png?v=@jsVersion@') 0px -10px no-repeat;width:16px !important;height:16px !important;overflow:hidden;}
+.ImgLeftArrow {background:url('@AppContextPath@/skins/twilight/img/zimbra.png?v=@jsVersion@') 0px -27px no-repeat;width:16px !important;height:16px !important;overflow:hidden;}
+.ImgRevArrowSmall {background:url('@AppContextPath@/skins/twilight/img/zimbra.png?v=@jsVersion@') 0px -44px no-repeat;width:6px !important;height:9px !important;overflow:hidden;}
+.ImgFwdArrowSmall {background:url('@AppContextPath@/skins/twilight/img/zimbra.png?v=@jsVersion@') 0px -54px no-repeat;width:6px !important;height:9px !important;overflow:hidden;}
+.ImgRightArrow {background:url('@AppContextPath@/skins/twilight/img/zimbra.png?v=@jsVersion@') 0px -64px no-repeat;width:16px !important;height:16px !important;overflow:hidden;}
+.ImgDisconnect {background:url('@AppContextPath@/skins/twilight/img/zimbra.png?v=@jsVersion@') 0px -81px no-repeat;width:16px !important;height:16px !important;overflow:hidden;}
+.ImgFastRevArrowSmall {background:url('@AppContextPath@/skins/twilight/img/zimbra.png?v=@jsVersion@') 0px -98px no-repeat;width:10px !important;height:9px !important;overflow:hidden;}

@@ -1,0 +1,2 @@
+.ImgRefreshAll {background:url('@AppContextPath@/skins/hotrod/img/zimbra.png?v=@jsVersion@') 0px 0px no-repeat;width:16px !important;height:16px !important;overflow:hidden;}
+.ImgDisconnect {background:url('@AppContextPath@/skins/hotrod/img/zimbra.png?v=@jsVersion@') 0px -17px no-repeat;width:16px !important;height:16px !important;overflow:hidden;}
