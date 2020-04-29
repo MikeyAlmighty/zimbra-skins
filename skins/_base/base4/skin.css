@@ -63,6 +63,7 @@ BODY									{	margin:0px; 	}
 #skin_spacing_logo {width: 100%;}
 /* .ImgAppBanner			{	background-repeat:no-repeat; @AppBanner@	} */
 #ff_header_white {background:@AppBanner@; background-repeat: round;}
+#ff_sub_header {background: linear-gradient(lightgrey, white);}
 /** Toast box **/
 #skin_container_toast					{	width:75%; height:75%; background: red	}
 	
@@ -162,7 +163,7 @@ BODY									{	margin:0px; 	}
 
 
 /** App Toolbar **/
-#skin_spacing_app_top_toolbar			{	height:35px; height:3.0rem; 	}
+#skin_spacing_app_top_toolbar			{	height:35px; height:3.0rem; background:#ededed; 	}
 #skin_container_app_top_toolbar			{	@SkinBorderAppToolbar@ width:auto; padding-top:5px; padding-left:@SashSize@; 	}
 #skin_container_app_new_button			{	@SkinBorderAppToolbar@ width:@TreeStartWidth@; padding:5px; }
 #skin_spacing_app_row					{	border-top:1px solid; border-spacing:0; padding:0px 7px; @AppTab@ 	}
@@ -218,6 +219,10 @@ BODY									{	margin:0px; 	}
 #ZLoginBodyContainer					{	@LoginPanelInnerBorder@	}
 #ZSplashPanel							{	@SplashOuterBorder@		}
 #ZSplashBodyContainer					{	@SplashInnerBorder@		}
+
+#ztb_search {    height: 22px;
+    border-radius: 5px;
+	border: 1px solid lightgray;}
 
 .LoginScreen,
 .SplashScreen,
@@ -410,7 +415,7 @@ BODY									{	margin:0px; 	}
 .ZmAppChooser								{	margin:0px !important;		}
 .ZAppTabBorder								{	@AppTabRoundCorners@		}
 .ZAppTabBorder .ZLeftIcon 					{	@AppTabLeftIcon@			}
-.ZAppTabBorder .ZWidgetTitle 				{	@AppTabWidgetTitle@ 		}
+.ZAppTabBorder .ZWidgetTitle 				{	@AppTabWidgetTitle@;		}
 .ZAppTabBorder .ZDropDown 					{	@AppTabDropDown@ 			}
 
 .ZSelectedPrev .ZAppTabBorder			 	{	@AppTabBorder-selectedPrev@	}
