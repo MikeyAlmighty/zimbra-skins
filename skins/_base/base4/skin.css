@@ -619,6 +619,12 @@ SELECT						{	@FieldBorder@	}
 	width:16px;
 }
 
+
+.ImgMsgUnread {
+	filter: hue-rotate(154deg) saturate(1.6);
+}
+
+
 .ZmMsgListColPriority {
 	width:8px;
 	margin-left:3px;
