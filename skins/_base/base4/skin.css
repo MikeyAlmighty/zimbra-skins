@@ -362,6 +362,28 @@ BODY									{	margin:0px; 	}
 .SplashScreen .decor1			{ @Decor1S@ }
 .SplashScreen .decor2			{ @Decor2S@ }
 
+.RowEven {background: none;}
+.RowOdd {background: none;}
+
+.DwtTreeItem-selected {background-color: red; color: white;}
+.DwtTreeItem:hover { text-decoration: underline; background-color: lightgray;}
+.DwtTreeItem-selected:hover { background-color: red; }
+
+.ZToolbarButtonBorder {
+	border-radius: 5px;
+	background: white;
+}
+
+.DwtCalendarDay-today { background: red; color: white;}
+
+.ZxChat_TitleBar_legacy {
+	background-color: white !important;
+}
+
+.ZxChat_TitleBar_legacy:first-child {
+	/* display: none; */
+}
+
 /* Error Screen Only Items */
 .ErrorScreen .contentBox		{ padding-bottom:1em; }
 .ErrorScreen .ZErrorPanel		{ margin-top:30px; }
