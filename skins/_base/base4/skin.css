@@ -380,9 +380,10 @@ BODY									{	margin:0px; 	}
 	background-color: white !important;
 }
 
-.ZxChat_TitleBar_legacy:first-child {
-	/* display: none; */
-}
+#DWT58_left_icon:first-child {filter: invert(100%) sepia(100%) contrast(1999%);}
+#DWT58:first-child {background: red;}
+
+.Conv2MsgHeader {    filter: hue-rotate(145deg);}
 
 /* Error Screen Only Items */
 .ErrorScreen .contentBox		{ padding-bottom:1em; }
