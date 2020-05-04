@@ -377,7 +377,7 @@ BODY									{	margin:0px; 	}
 .DwtCalendarDay-today { background: red; color: white;}
 
 .ZxChat_TitleBar_legacy {
-	background-color: white !important;
+	background-color: red !important;
 }
 
 #DWT58_left_icon:first-child {filter: invert(100%) sepia(100%) contrast(1999%);}
@@ -420,6 +420,7 @@ BODY									{	margin:0px; 	}
 	text-align:left;
 	white-space:nowrap;
 }
+
 .ZmPicker .ZToolbar {
 	@WidgetHeaderContainer@
 	@WidgetHeaderContainer-normal@
@@ -429,11 +430,11 @@ BODY									{	margin:0px; 	}
 	overflow:hidden !important;
 	color: white;
 }
+
 .BannerTextUserOffline {
 	text-align:left !important;
 	padding:0px 3px;
 }
-
 
 .ZButton.ZAppTab.ZHasLeftIcon.ZHasText.ZSelected{
 	background: red;
@@ -443,11 +444,7 @@ BODY									{	margin:0px; 	}
 
 .ZSelected .ZAppTabBorder{
 	color: white !important;
-
 }
-/* .ZButton.ZAppTab.ZHasLeftIcon.ZHasText.ZSelected:first-child{
-}  */
-
 
 .ZWidgetTable.ZAppTabTable.ZAppTabBorder {
 	background:none;
