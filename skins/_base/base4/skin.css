@@ -434,6 +434,25 @@ BODY									{	margin:0px; 	}
 	padding:0px 3px;
 }
 
+
+.ZButton.ZAppTab.ZHasLeftIcon.ZHasText.ZSelected{
+	background: red;
+	height: 20px;
+	border-radius: 15px;
+} 
+
+.ZSelected .ZAppTabBorder{
+	color: white !important;
+
+}
+/* .ZButton.ZAppTab.ZHasLeftIcon.ZHasText.ZSelected:first-child{
+}  */
+
+
+.ZWidgetTable.ZAppTabTable.ZAppTabBorder {
+	background:none;
+}
+
 /* App Chooser and App Tab Overrides -- TODO: Merge into main */
 .ZmAppChooser								{	margin:0px !important;		}
 .ZAppTabBorder								{	@AppTabRoundCorners@		}
