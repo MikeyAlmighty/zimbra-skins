@@ -1,0 +1,5 @@
+.ImgNewSelectPullDownArrow {background:url('@AppContextPath@/skins/harmony/img/harmony/ImgNewSelectPullDownArrow.png?v=@jsVersion@') 0px 0px no-repeat;width:12px !important;height:16px !important;overflow:hidden;}
+.ImgRefreshAll {background:url('@AppContextPath@/skins/harmony/img/zimbra.png?v=@jsVersion@') 0px 0px no-repeat;width:16px !important;height:16px !important;overflow:hidden;}
+.ImgMsgRead {background:url('@AppContextPath@/skins/harmony/img/zimbra.png?v=@jsVersion@') 0px -17px no-repeat;width:16px !important;height:16px !important;overflow:hidden;}
+.ImgMsgUnread {background:url('@AppContextPath@/skins/harmony/img/zimbra.png?v=@jsVersion@') 0px -34px no-repeat;width:16px !important;height:16px !important;overflow:hidden;}
+.ImgDisconnect {background:url('@AppContextPath@/skins/harmony/img/zimbra.png?v=@jsVersion@') 0px -51px no-repeat;width:16px !important;height:16px !important;overflow:hidden;}
