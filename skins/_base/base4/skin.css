@@ -391,8 +391,9 @@ BODY									{	margin:0px; 	}
 	background-color: red !important;
 }
 
-#DWT58_left_icon:first-child {filter: invert(100%) sepia(100%) contrast(1999%);}
-#DWT58:first-child {background: red;}
+
+
+/* #DWT58_left_icon:first-child {filter: invert(100%) sepia(100%) contrast(1999%);} */
 
 .Conv2MsgHeader {    filter: hue-rotate(145deg);}
 
