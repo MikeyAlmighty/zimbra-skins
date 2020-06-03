@@ -1,1 +1,0 @@
-The "base" skin has been deprecated. Please use "base2" as the template for new skins. This template is no longer supported.
