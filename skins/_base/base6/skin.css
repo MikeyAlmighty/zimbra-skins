@@ -59,11 +59,15 @@ BODY									{	margin:0px; 	}
 #skin_spacing_top_row .DwtLinkButtonDropDownArrowRow	{	background-color:@SkinTopRowColor@; 	}
 
 /** Logo displayed in the app **/
-#skin_spacing_logo						{}
-#skin_container_logo					{	width:@LogoWidth@; 	}
-	
+#skin_container_logo					{	 	}
+#skin_spacing_logo {width: 100%;}
+/* .ImgAppBanner			{	background-repeat:no-repeat; @AppBanner@	} */
+#ff_header_white { display:table-cell; background-repeat:round; background:@AppBanner@;  }
+
+
+#ff_sub_header {background: linear-gradient(lightgrey, white);}
 /** Toast box **/
-#skin_container_toast					{	width:69%; height:69%; 	}
+#skin_container_toast					{	width:75%; height:75%; background: #2AB24B	}
 	
 /** Search box **/	
 #skin_spacing_search,
@@ -161,7 +165,7 @@ BODY									{	margin:0px; 	}
 
 
 /** App Toolbar **/
-#skin_spacing_app_top_toolbar			{	height:35px; height:3.0rem; 	}
+#skin_spacing_app_top_toolbar			{	height:35px; height:3.0rem; background:#ededed; 	}
 #skin_container_app_top_toolbar			{	@SkinBorderAppToolbar@ width:auto; padding-top:5px; padding-left:@SashSize@; 	}
 #skin_container_app_new_button			{	@SkinBorderAppToolbar@ width:@TreeStartWidth@; padding:5px; }
 #skin_spacing_app_row					{	border-top:1px solid; border-spacing:0; padding:0px 7px; @AppTab@ 	}
@@ -217,6 +221,10 @@ BODY									{	margin:0px; 	}
 #ZLoginBodyContainer					{	@LoginPanelInnerBorder@	}
 #ZSplashPanel							{	@SplashOuterBorder@		}
 #ZSplashBodyContainer					{	@SplashInnerBorder@		}
+
+#ztb_search {    height: 22px;
+    border-radius: 5px;
+	border: 1px solid lightgray;}
 
 .LoginScreen,
 .SplashScreen,
@@ -356,6 +364,35 @@ BODY									{	margin:0px; 	}
 .SplashScreen .decor1			{ @Decor1S@ }
 .SplashScreen .decor2			{ @Decor2S@ }
 
+.RowEven {background-color: unset;}
+.RowOdd {background-color: unset;}
+
+
+.DwtTreeItem-selected {background-color: #2AB24B; color: white;}
+.DwtTreeItem:hover { text-decoration: underline; background-color: lightgray;}
+.DwtTreeItem-selected:hover { background-color: #2AB24B; }
+
+.ZToolbarButtonBorder {
+	border-radius: 5px;
+	background: white;
+}
+
+.DwtCalendarDay-today { background: #2AB24B; color: white;}
+
+.ZxChat_TitleBar_legacy {
+	background-color: #2AB24B !important;
+}
+
+.ZxChat_Button.ZHover>.ZToolbarButtonBorder {
+	background-color: #2AB24B !important;
+}
+
+.ZxChat_Button.ZActive>.ZToolbarButtonBorder {
+	background-color: #2AB24B !important;
+}
+
+.Conv2MsgHeader {    filter: hue-rotate(263deg) saturate(1)}
+
 /* Error Screen Only Items */
 .ErrorScreen .contentBox		{ padding-bottom:1em; }
 .ErrorScreen .ZErrorPanel		{ margin-top:30px; }
@@ -373,8 +410,8 @@ BODY									{	margin:0px; 	}
 
 /** Logo Images **/
 .center-small .ImgLoginBanner,
-.ImgAppBanner			{	background-repeat:no-repeat; @AppBanner@	}
-.ImgLoginBanner			{	background-repeat:no-repeat; background-size: contain;transform: scale(0.9) scaleX(1.1);@LoginBannerPosition@ @LoginBanner@	}
+/* .ImgAppBanner			{	background-repeat:no-repeat; @AppBanner@	} */
+.ImgLoginBanner			{	background-repeat:no-repeat; background-size: contain; transform: scale(0.9) scaleX(1.1); @LoginBannerPosition@ @LoginBanner@	}
 #IFDEF MSIE
 #skin_container_logo A, #skin_container_logo A:hover, #skin_container_logo A:link {
 	background-color:transparent;}
@@ -391,6 +428,7 @@ BODY									{	margin:0px; 	}
 	text-align:left;
 	white-space:nowrap;
 }
+
 .ZmPicker .ZToolbar {
 	@WidgetHeaderContainer@
 	@WidgetHeaderContainer-normal@
@@ -398,17 +436,34 @@ BODY									{	margin:0px; 	}
 
 .BannerTextUser {
 	overflow:hidden !important;
+	color: white;
 }
+
+
 .BannerTextUserOffline {
 	text-align:left !important;
 	padding:0px 3px;
+}
+
+.ZButton.ZAppTab.ZHasLeftIcon.ZHasText.ZSelected{
+	background: #2AB24B;
+	height: 20px;
+	border-radius: 15px;
+} 
+
+.ZSelected .ZAppTabBorder{
+	color: white !important;
+}
+
+.ZWidgetTable.ZAppTabTable.ZAppTabBorder {
+	background:none;
 }
 
 /* App Chooser and App Tab Overrides -- TODO: Merge into main */
 .ZmAppChooser								{	margin:0px !important;		}
 .ZAppTabBorder								{	@AppTabRoundCorners@		}
 .ZAppTabBorder .ZLeftIcon 					{	@AppTabLeftIcon@			}
-.ZAppTabBorder .ZWidgetTitle 				{	@AppTabWidgetTitle@ 		}
+.ZAppTabBorder .ZWidgetTitle 				{	@AppTabWidgetTitle@;		}
 .ZAppTabBorder .ZDropDown 					{	@AppTabDropDown@ 			}
 
 .ZSelectedPrev .ZAppTabBorder			 	{	@AppTabBorder-selectedPrev@	}
@@ -584,7 +639,7 @@ SELECT						{	@FieldBorder@	}
 .RowDouble .BottomRow				{ margin:4px 0px 6px; 	}
 .Row-matched, .RowDouble-matched,
 .RowDouble-matched .ZmListFlagsWrapper,
-.RowDouble-matched .ZmMsgListDate	{ background-color:@SearchResultColor@;		}
+.RowDouble-matched .ZmMsgListDate	{ background-color: white;		}
 .TopRow, .BottomRow					{ height:16px; height:1.6rem; position:relative;	}
 #IFDEF MSIE_LESS_THAN_9
 .TopRow, .BottomRow					{ width:99%;	}
@@ -605,12 +660,25 @@ SELECT						{	@FieldBorder@	}
 .TopRow .ImgNodeExpanded			{ padding:0px; }
 .ZmMsgListColTag 					{ padding:0px 2px 0px 3px; vertical-align:middle; }
 .BottomRow .ZmMsgListColTag 		{ margin-right:3px; }
-.ZmMsgListDate						{ position:absolute; right:0px; text-align:right; width:75px; width:6.8rem;}
+.ZmMsgListDate						{ position:absolute; right:0px; text-align:right; width:75px; width:6.8rem; background: white;}
 .ZmMsgListColSelection, .ZmMsgListColFlag, .ZmMsgListColTag, .ZmMsgListColAccount,
 .ZmMsgListColStatus, .ZmMsgListColMute, .ZmMsgListColRead, .ZmMsgListColAttachment, .ZmMsgListColExpand
 {
 	width:16px;
 }
+
+.RowOdd .ZmMsgListDate{
+    background-color: white;
+}
+
+.RowOdd .ZmListFlagsWrapper {
+    background-color: white;
+}
+
+.ImgMsgUnread {
+	filter: hue-rotate(280deg) saturate(1.5);
+}
+
 
 .ZmMsgListColPriority {
 	width:8px;

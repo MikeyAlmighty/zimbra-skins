@@ -1,7 +1,8 @@
-/*
+ <skin>
+<!--
  * ***** BEGIN LICENSE BLOCK *****
  * Zimbra Collaboration Suite Web Client
- * Copyright (C) 2010, 2011, 2012, 2013, 2014, 2016 Synacor, Inc.
+ * Copyright (C) 2011, 2013, 2014, 2016 Synacor, Inc.
  *
  * The contents of this file are subject to the Common Public Attribution License Version 1.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,36 +18,20 @@
  * The Initial Developer of the Original Code is Zimbra, Inc.  All rights to the Original Code were
  * transferred by Zimbra, Inc. to Synacor, Inc. on September 14, 2015.
  *
- * All portions of the code are Copyright (C) 2010, 2011, 2012, 2013, 2014, 2016 Synacor, Inc. All Rights Reserved.
+ * All portions of the code are Copyright (C) 2011, 2013, 2014, 2016 Synacor, Inc. All Rights Reserved.
  * ***** END LICENSE BLOCK *****
- *
-
-
-/** LoginPanel and Splash screen **/
-#skin_spacing_logo						{ background: 'red'; width: 100%}
-#skin_td_flex {display: none;}
-#skin_container_toast {width: 100%; height:100%}
-#ImgLoginBanner { margin-bottom: 2em;}
-
-.LoginScreen H1, .SplashScreen H1 {
-    padding-left: 2.1em;
-}
-
-.ImgAppBanner {
-    width: 100%;
-    background-position-x: 0.9em;
-    background-color: transparent;
-    background-size: 11em;
-    height: 100%;
-}
-.BannerTextUser {
-    border: red 15.3px solid;
-    background: red;
-  }
-
-@media only screen and (max-width: 1024px) {
-	.BannerTextUser {
-	  border: red 15.3px solid;
-	  background: red;
-	}
-  }
+-->
+	<substitutions>
+		<file>skin.properties</file>
+	</substitutions>
+	<css>
+		<file>skin.css</file>
+	</css>
+    <script>
+        <file>ZmSkin.js</file>
+    </script>
+    <html>
+		<file>skin.html</file>
+		<file>splash.html</file>
+	</html>
+</skin>

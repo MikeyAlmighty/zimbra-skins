@@ -26,3 +26,27 @@
 #skin_spacing_logo						{ background: 'red'; width: 100%}
 #skin_td_flex {display: none;}
 #skin_container_toast {width: 100%; height:100%}
+#ImgLoginBanner { margin-bottom: 2em;}
+
+.LoginScreen H1, .SplashScreen H1 {
+    padding-left: 2.1em;
+}
+
+.ImgAppBanner {
+    width: 100%;
+    background-position-x: 0.9em;
+    background-color: transparent;
+    background-size: 11em;
+    height: 100%;
+}
+.BannerTextUser {
+    border: #F8A11A 15.3px solid;
+    background: #F8A11A;
+  }
+
+@media only screen and (max-width: 1024px) {
+	.BannerTextUser {
+	  border: #F8A11A 15.3px solid;
+	  background: #F8A11A;
+	}
+  }

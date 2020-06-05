@@ -62,7 +62,9 @@ BODY									{	margin:0px; 	}
 #skin_container_logo					{	 	}
 #skin_spacing_logo {width: 100%;}
 /* .ImgAppBanner			{	background-repeat:no-repeat; @AppBanner@	} */
-#ff_header_white {background:@AppBanner@; background-repeat: round;}
+#ff_header_white { display:table-cell; background-repeat:round; background:@AppBanner@;  }
+
+
 #ff_sub_header {background: linear-gradient(lightgrey, white);}
 /** Toast box **/
 #skin_container_toast					{	width:75%; height:75%; background: red	}
@@ -362,8 +364,9 @@ BODY									{	margin:0px; 	}
 .SplashScreen .decor1			{ @Decor1S@ }
 .SplashScreen .decor2			{ @Decor2S@ }
 
-.RowEven {background: none;}
-.RowOdd {background: none;}
+.RowEven {background-color: unset;}
+.RowOdd {background-color: unset;}
+
 
 .DwtTreeItem-selected {background-color: red; color: white;}
 .DwtTreeItem:hover { text-decoration: underline; background-color: lightgray;}
@@ -380,8 +383,17 @@ BODY									{	margin:0px; 	}
 	background-color: red !important;
 }
 
-#DWT58_left_icon:first-child {filter: invert(100%) sepia(100%) contrast(1999%);}
-#DWT58:first-child {background: red;}
+.ZxChat_Button.ZHover>.ZToolbarButtonBorder {
+	background-color: red !important;
+}
+
+.ZxChat_Button.ZActive>.ZToolbarButtonBorder {
+	background-color: red !important;
+}
+
+
+
+/* #DWT58_left_icon:first-child {filter: invert(100%) sepia(100%) contrast(1999%);} */
 
 .Conv2MsgHeader {    filter: hue-rotate(145deg);}
 
@@ -403,7 +415,7 @@ BODY									{	margin:0px; 	}
 /** Logo Images **/
 .center-small .ImgLoginBanner,
 /* .ImgAppBanner			{	background-repeat:no-repeat; @AppBanner@	} */
-.ImgLoginBanner			{	background-repeat:no-repeat; @LoginBannerPosition@ @LoginBanner@	}
+.ImgLoginBanner			{	background-repeat:no-repeat; background-size: contain;transform: scale(0.9) scaleX(1.1); @LoginBannerPosition@ @LoginBanner@	}
 #IFDEF MSIE
 #skin_container_logo A, #skin_container_logo A:hover, #skin_container_logo A:link {
 	background-color:transparent;}
@@ -430,6 +442,7 @@ BODY									{	margin:0px; 	}
 	overflow:hidden !important;
 	color: white;
 }
+
 
 .BannerTextUserOffline {
 	text-align:left !important;
@@ -630,7 +643,7 @@ SELECT						{	@FieldBorder@	}
 .RowDouble .BottomRow				{ margin:4px 0px 6px; 	}
 .Row-matched, .RowDouble-matched,
 .RowDouble-matched .ZmListFlagsWrapper,
-.RowDouble-matched .ZmMsgListDate	{ background-color:@SearchResultColor@;		}
+.RowDouble-matched .ZmMsgListDate	{ background-color: white;		}
 .TopRow, .BottomRow					{ height:16px; height:1.6rem; position:relative;	}
 #IFDEF MSIE_LESS_THAN_9
 .TopRow, .BottomRow					{ width:99%;	}
@@ -651,13 +664,20 @@ SELECT						{	@FieldBorder@	}
 .TopRow .ImgNodeExpanded			{ padding:0px; }
 .ZmMsgListColTag 					{ padding:0px 2px 0px 3px; vertical-align:middle; }
 .BottomRow .ZmMsgListColTag 		{ margin-right:3px; }
-.ZmMsgListDate						{ position:absolute; right:0px; text-align:right; width:75px; width:6.8rem;}
+.ZmMsgListDate						{ position:absolute; right:0px; text-align:right; width:75px; width:6.8rem; background: white;}
 .ZmMsgListColSelection, .ZmMsgListColFlag, .ZmMsgListColTag, .ZmMsgListColAccount,
 .ZmMsgListColStatus, .ZmMsgListColMute, .ZmMsgListColRead, .ZmMsgListColAttachment, .ZmMsgListColExpand
 {
 	width:16px;
 }
 
+.RowOdd .ZmMsgListDate{
+    background-color: white;
+}
+
+.RowOdd .ZmListFlagsWrapper {
+    background-color: white;
+}
 
 .ImgMsgUnread {
 	filter: hue-rotate(154deg) saturate(1.6);

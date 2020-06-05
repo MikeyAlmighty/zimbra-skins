@@ -40,13 +40,13 @@
     height: 100%;
 }
 .BannerTextUser {
-    border: red 15.3px solid;
-    background: red;
+    border: #F8A11A 15.3px solid;
+    background: #F8A11A;
   }
 
 @media only screen and (max-width: 1024px) {
 	.BannerTextUser {
-	  border: red 15.3px solid;
-	  background: red;
+	  border: #F8A11A 15.3px solid;
+	  background: #F8A11A;
 	}
   }
