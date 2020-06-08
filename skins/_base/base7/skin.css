@@ -368,8 +368,8 @@ BODY									{	margin:0px; 	}
 .SplashScreen .decor1			{ @Decor1S@ }
 .SplashScreen .decor2			{ @Decor2S@ }
 
-.RowEven {background-color: unset;}
-.RowOdd {background-color: unset;}
+.RowEven {background-color: unset !important;}
+.RowOdd {background-color: unset !important;}
 
 .ZWidgetTable.ZAppTabTable.ZAppTabBorder { color: white; background: none;}
 .DwtTreeItem-selected {background-color: red; color: white;}
@@ -381,6 +381,12 @@ BODY									{	margin:0px; 	}
 	background: white;
 }
 
+.DwtCalendarDay { color: #FFFFFF; border-color: gray;}
+.DwtCalendar, .DwtCalendarDow { 
+	color: #FFFFFF;
+	background-color: #383838;
+}
+.DwtCalendarTitleCell, .DwtCalendarButton{color: #FFFFFF;}
 .DwtCalendarDay-today { background: red; color: white;}
 
 .ZxChat_TitleBar_legacy {
@@ -394,8 +400,7 @@ BODY									{	margin:0px; 	}
 .ZxChat_Button.ZActive>.ZToolbarButtonBorder {
 	background-color: red !important;
 }
-
-.Conv2MsgHeader {    filter: hue-rotate(145deg);}
+.Conv2MsgHeader {    filter: hue-rotate(145deg); }
 
 /* Error Screen Only Items */
 .ErrorScreen .contentBox		{ padding-bottom:1em; }
@@ -653,7 +658,7 @@ SELECT						{	@FieldBorder@	}
 	background: #383838;
 }
 
-#ztih__main_Mail__TAG_nodeCell,#ztih__main_Mail__TAG_imageCell, #ztih__main_Mail__TAG_textCell{
+#ztih__main_Mail__TAG_nodeCell,#ztih__main_Mail__TAG_imageCell, #ztih__main_Mail__TAG_textCell,.ZmMailMsgCapsuleView.Expanded,.MsgBody.MsgBody-text{
 	color: #FFFFFF;
 	background: #383838;
 }
@@ -717,7 +722,11 @@ SELECT						{	@FieldBorder@	}
 	width:16px;
 }
 
-.ZmMsgListBottomRowIcon.SubjectDoubleRow {
+.ZmConvListFragment {
+	color: #FFFFFF !important;
+}
+
+.ZmMsgListBottomRowIcon.SubjectDoubleRow{
 	color: #FFFFFF;
 } 
 
@@ -731,11 +740,11 @@ SELECT						{	@FieldBorder@	}
 
 
 .RowOdd .ZmListFlagsWrapper, .RowEven .ZmListFlagsWrapper {
-	background: none; 
+	background: none !important; 
 }
 
 .RowEven .ZmMsgListDate,.RowOdd .ZmMsgListDate {
-	background: #383838;
+	background: #383838 !important;
 	color: #FFFFFF;
 } 
 
