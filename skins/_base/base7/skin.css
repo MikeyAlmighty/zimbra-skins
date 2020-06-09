@@ -163,11 +163,11 @@ BODY									{	margin:0px; 	}
 #skin_container_global_buttons .ZActive		.ZToolbarButtonBorder	{	@AppButtonBorder-active@		}
 #skin_container_global_buttons .ZSelected	.ZToolbarButtonBorder	{	@AppButtonBorder-selected@		}
 .skin_layout_row.skin_layout_filler{
-	background: #111111;
+	background: #383838;
 }
 
 /** App Toolbar **/
-#skin_spacing_app_top_toolbar			{	height:35px; height:3.0rem; background:#111111; 	}
+#skin_spacing_app_top_toolbar			{	height:35px; height:3.0rem; background:#383838; 	}
 #skin_container_app_top_toolbar			{	@SkinBorderAppToolbar@ width:auto; padding-top:5px; padding-left:@SashSize@; 	}
 #skin_container_app_new_button			{	@SkinBorderAppToolbar@ width:@TreeStartWidth@; padding:5px; }
 #skin_spacing_app_row					{	border-top:1px solid; border-spacing:0; padding:0px 7px; @AppTab@ 	}
@@ -224,7 +224,7 @@ BODY									{	margin:0px; 	}
 #ZSplashPanel							{	@SplashOuterBorder@		}
 #ZSplashBodyContainer					{	@SplashInnerBorder@		}
 
-.AppSash-horiz{ background: #111111;}
+.AppSash-horiz{ background: #383838;}
 
 #ztb_search {    height: 22px;
     border-radius: 5px;
@@ -396,6 +396,8 @@ BODY									{	margin:0px; 	}
 .ZxChat_Button.ZHover>.ZToolbarButtonBorder {
 	background-color: red !important;
 }
+
+#zlh__CLV-main__sb { 	background: #383838;}
 
 .ZxChat_Button.ZActive>.ZToolbarButtonBorder {
 	background-color: red !important;
@@ -634,54 +636,223 @@ SELECT						{	@FieldBorder@	}
 .DwtListView-Column TD				{ color:@darken(AppC,55)@; 					}
 .DwtListHeaderItem-label { color:#FFFFFF !important;}
 
-.DwtTreeItem-Text, #CLV-main__right__text, .NoResults {
+.DwtTreeItem-Text, #CLV-main__right__text, 
+.NoResults, #ztb__CAL__Nav_items, 
+.calendar_grid_body_time_text, .calendar_heading_day,
+.calendar_heading_day_today {
 	color: #FFFFFF;
 }
 
+.overviewHeader.td {
+	background-color: #383838 !important;
+} 
+
+.calendar_heading_day-selected {
+	background: #383838 !important;
+	color: red;
+}
+
+.calendar_header_allday_separator,
 .DwtTreeItem:hover {
-	background-color: grey;
+	background-color: red;
     text-decoration: underline;
 }
+.ImgCalendarDayGrid {
+	background-color: #5a5a5a !important;
+}
 
-#ztih__main_Mail__FOLDER_nodeCell,#ztih__main_Mail__FOLDER_imageCell, #ztih__main_Mail__FOLDER_textCell, #zl__CLV-main{
+#ztih__main_Mail__FOLDER_nodeCell,
+#ztih__main_Mail__FOLDER_imageCell,
+#ztih__main_Mail__FOLDER_textCell,
+#zl__CLV-main,#zv__CLV-main__CV__header,
+#zv__CLV-main__CV__header_info,
+.ZmContactSplitView, .calendar_heading {
 	color: #FFFFFF;
 	background: #383838;
 }
 
-#ztih__main_Mail__ZIMLET_nodeCell,#ztih__main_Mail__ZIMLET_imageCell, #ztih__main_Mail__ZIMLET_textCell{
+#ztih__main_Contacts__ADDRBOOK_nodeCell,
+#ztih__main_Contacts__ADDRBOOK_imageCell,
+#ztih__main_Contacts__ADDRBOOK_textCell {
 	color: #FFFFFF;
 	background: #383838;
 }
 
-#ztih__main_Mail__SEARCH_nodeCell,#ztih__main_Mail__SEARCH_imageCell, #ztih__main_Mail__SEARCH_textCell{
+
+#ztih__main_Briefcase__TAG_nodeCell,
+#ztih__main_Briefcase__TAG_imageCell,
+#ztih__main_Briefcase__TAG_textCell {
 	color: #FFFFFF;
 	background: #383838;
 }
 
-#ztih__main_Mail__TAG_nodeCell,#ztih__main_Mail__TAG_imageCell, #ztih__main_Mail__TAG_textCell,.ZmMailMsgCapsuleView.Expanded,.MsgBody.MsgBody-text{
+#ztih__main_Briefcase__BRIEFCASE_nodeCell,
+#ztih__main_Briefcase__BRIEFCASE_imageCell,
+#ztih__main_Briefcase__BRIEFCASE_textCell {
 	color: #FFFFFF;
 	background: #383838;
 }
 
-#DWT38_left_icon {
+#ztih__main_Options__PREF_PAGE_nodeCell,
+#ztih__main_Options__PREF_PAGE_imageCell,
+#ztih__main_Options__PREF_PAGE_textCell {
+	color: #FFFFFF;
 	background: #383838;
 }
 
-#DWT39_left_icon {
+#ztih__main_Tasks__TASK_nodeCell,
+#ztih__main_Tasks__TASK_imageCell,
+#ztih__main_Tasks__TASK_textCell {
+	color: #FFFFFF;
 	background: #383838;
 }
 
-#DWT40_left_icon {
+#ztih__main_Calendar__CALENDAR_nodeCell,
+#ztih__main_Calendar__CALENDAR_imageCell,
+#ztih__main_Calendar__CALENDAR_textCell {
+	color: #FFFFFF;
 	background: #383838;
 }
 
-#zov__main_Mail,#zv__CLV-main__CV,#zv__CLV-main,#zv__CLV-main__CV_messages{
+.DwtDialog.WindowOuterContainer.FixBordersForZ7 {
+	box-shadow: none;
+}
+
+#ztih__main_Mail__ZIMLET_nodeCell,
+#ztih__main_Mail__ZIMLET_imageCell,
+#ztih__main_Mail__ZIMLET_textCell,
+.DwtButton.AlphabetBarCell,
+.DwtButton-active.AlphabetBarCell {
+	color: #FFFFFF;
 	background: #383838;
 }
 
-.DwtTree {
+#ztih__main_Contacts__ZIMLET_nodeCell,
+#ztih__main_Contacts__ZIMLET_imageCell,
+#ztih__main_Contacts__ZIMLET_textCell {
+	color: #FFFFFF;
 	background: #383838;
 }
+
+#ztih__main_Briefcase__ZIMLET_nodeCell,
+#ztih__main_Briefcase__ZIMLET_imageCell,
+#ztih__main_Briefcase__ZIMLET_textCell {
+	color: #FFFFFF;
+	background: #383838;
+}
+
+#ztih__main_Tasks__ZIMLET_nodeCell,
+#ztih__main_Tasks__ZIMLET_imageCell,
+#ztih__main_Tasks__ZIMLET_textCell {
+	color: #FFFFFF;
+	background: #383838;
+}
+
+#ztih__main_Calendar__ZIMLET_nodeCell,
+#ztih__main_Calendar__ZIMLET_imageCell,
+#ztih__main_Calendar__ZIMLET_textCell,
+#zv__CLWW {
+	color: #FFFFFF;
+	background: #383838;
+}
+
+
+#ztih__main_Mail__SEARCH_nodeCell,
+#ztih__main_Mail__SEARCH_imageCell,
+#ztih__main_Mail__SEARCH_textCell {
+	color: #FFFFFF;
+	background: #383838;
+}
+
+#ztih__main_Calendar__SEARCH_nodeCell,
+#ztih__main_Calendar__SEARCH_imageCell,
+#ztih__main_Calendar__SEARCH_textCell {
+	color: #FFFFFF;
+	background: #383838;
+}
+
+#ztih__main_Tasks__SEARCH_nodeCell,
+#ztih__main_Tasks__SEARCH_imageCell,
+#ztih__main_Tasks__SEARCH_textCell {
+	color: #FFFFFF;
+	background: #383838;
+}
+
+#ztih__main_Contacts__SEARCH_nodeCell,
+#ztih__main_Contacts__SEARCH_imageCell,
+#ztih__main_Contacts__SEARCH_textCell {
+	color: #FFFFFF;
+	background: #383838;
+}
+
+#ztih__main_Contacts__TAG_nodeCell,
+#ztih__main_Contacts__TAG_imageCell,
+#ztih__main_Contacts__TAG_textCell {
+	color: #FFFFFF;
+	background: #383838;
+}
+
+#ztih__main_Tasks__TAG_nodeCell,
+#ztih__main_Tasks__TAG_imageCell,
+#ztih__main_Tasks__TAG_textCell {
+	color: #FFFFFF;
+	background: #383838;
+}
+
+#ztih__main_Calendar__TAG_nodeCell,
+#ztih__main_Calendar__TAG_imageCell,
+#ztih__main_Calendar__TAG_textCell {
+	color: #FFFFFF;
+	background: #383838;
+}
+
+#ztih__main_Mail__TAG_nodeCell,
+#ztih__main_Mail__TAG_imageCell,
+#ztih__main_Mail__TAG_textCell,
+.ZmMailMsgCapsuleView.Expanded,
+.MsgBody.MsgBody-text,
+.ZmContactInfoView, #zv__BDLV-main,
+.ZmPreviewView,.Conv2Header {
+	color: #FFFFFF;
+	background: #383838;
+}
+
+.overviewHeader td{
+	background: #383838;
+}
+
+#DWT38_left_icon, #DWT39_left_icon,
+#DWT40_left_icon, #DWT82_left_icon,
+#DWT81_left_icon, #DWT79_left_icon,
+#DWT80_left_icon, #DWT78_left_icon,
+#DWT146_left_icon, #DWT145_left_icon,
+#DWT144_left_icon, #DWT149_left_icon,
+td.DwtListView-ColumnActive {
+	background: #383838;
+}
+
+#ZmContactSplitView_1_contentCell,
+#zv__CNS-main, #zov__main_Contacts,
+#zov__main_Mail,#zv__CLV-main__CV,
+#zv__CLV-main,#zv__CLV-main__CV_messages,
+#z_sash, .DwtTree, #zov__main_Calendar, #zov__main_Tasks,
+.DwtListView, .ZmMailMsgView, #Prefs_Pages_GENERAL,
+.Conv2Messages {
+	background: #383838;
+}
+
+.SubjectCol.LabelColValue, .LabelColName{ color: #FFFFFF !important;}
+.LabelColValue { color: grey !important;}
+.newTaskBanner {background: grey;}
+
+#skin_container_tree, .ZmMailMsgView .MsgHeaderTable {
+	background: none;
+}
+
+#ztkl-mainNavText {
+	color: #FFFFFF;
+}
+
 
 .overviewHeader			{ border: 0px; padding:1px 0px; 	}
 .overviewHeader>TABLE 		{ border:none; 	}
@@ -752,9 +923,6 @@ SELECT						{	@FieldBorder@	}
 	filter: hue-rotate(154deg) saturate(1.6);
 }
 
-#z_sash {
-	background: #111111;
-}
 
 .ZmMsgListColPriority {
 	width:8px;
