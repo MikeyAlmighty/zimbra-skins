@@ -367,10 +367,8 @@ BODY									{	margin:0px; 	}
 .RowEven {background-color: unset;}
 .RowOdd {background-color: unset;}
 
-
-.DwtTreeItem-selected {background-color: #F9A11B; color: white;}
-.DwtTreeItem:hover { text-decoration: underline; background-color: lightgray;}
-.DwtTreeItem-selected:hover { background-color: #F9A11B; }
+.DwtTreeItem-selected {background: none; border-bottom: 2px solid #F9A11B; color: black;}
+.DwtTreeItem:hover { font-weight: bold; background: none;}
 
 .ZToolbarButtonBorder {
 	border-radius: 5px;
@@ -446,13 +444,17 @@ BODY									{	margin:0px; 	}
 }
 
 .ZButton.ZAppTab.ZHasLeftIcon.ZHasText.ZSelected{
-	background: #F9A11B;
-	height: 20px;
+	background: none;
+	border: 1.6px solid #F9A11B;
+	font-weight: bold !important;
+	padding-top: 1px;
+	height: 23px;
 	border-radius: 15px;
 } 
 
 .ZSelected .ZAppTabBorder{
-	color: white !important;
+	font-weight: bold !important;
+	color: black !important;
 }
 
 .ZWidgetTable.ZAppTabTable.ZAppTabBorder {
