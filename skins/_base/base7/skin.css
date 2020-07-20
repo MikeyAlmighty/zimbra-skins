@@ -76,7 +76,7 @@ BODY									{	margin:0px; 	}
 
 #skin_container_search .ZmSearchToolbar {	@SkinSearchToolbar@ 		}
 #skin_container_search .ZButton			{	height:auto;	}
-#skin_container_search .ZButtonBorder	{	border:0px; background-color:transparent; background-image:none; @NoShadow@ @NoRoundCorners@ }
+#skin_container_search .ZButtonBorder	{	border:0px; background:gray ; background-image:none; @NoShadow@ @NoRoundCorners@ }
 #skin_container_search .ZWidgetTitle 	{	display:none; 	}
 /** combined username/quota **/
 #skin_spacing_tree_top					{	text-align:center;		}
@@ -157,7 +157,7 @@ BODY									{	margin:0px; 	}
 #skin_container_global_buttons .ZToolbarButton						{	@AppButton@	@AppButtonSpacing@	}
 
 #skin_container_global_buttons				.ZToolbarButtonBorder	{	@AppButtonBorder@	@AppButtonBorder-normal@	}
-#skin_container_global_buttons .ZHover		.ZToolbarButtonBorder	{	@AppButtonBorder-hover@			}
+#skin_container_global_buttons .ZToolbarButtonBorder	{	@AppButtonBorder-hover@			}
 #skin_container_global_buttons .ZDisabled	.ZToolbarButtonBorder	{	@AppButtonBorder-disabled@		}
 #skin_container_global_buttons .ZFocused	.ZToolbarButtonBorder	{	@AppButtonBorder-focused@		}
 #skin_container_global_buttons .ZActive		.ZToolbarButtonBorder	{	@AppButtonBorder-active@		}
@@ -380,6 +380,10 @@ BODY									{	margin:0px; 	}
 	border-radius: 5px;
 	background: white;
 }
+.ZWidgetTable.ZToolbarButtonTable.ZToolbarButtonBorder{
+	background: #534f4f;
+	color: white;
+}
 
 .DwtCalendarDay { color: #FFFFFF; border-color: gray;}
 .DwtCalendar, .DwtCalendarDow { 
@@ -398,6 +402,18 @@ BODY									{	margin:0px; 	}
 }
 
 #zlh__CLV-main__sb { 	background: #383838;}
+
+#zi_search_inputfield, .addrBubbleContainer{
+	background:gray;
+}
+
+.ZmConvView2 {
+	background: #383838;
+}
+
+.DwtBaseDialog  {
+	display: none !important;
+}
 
 .ZxChat_Button.ZActive>.ZToolbarButtonBorder {
 	background-color: red !important;
@@ -461,8 +477,10 @@ BODY									{	margin:0px; 	}
 	height: 20px;
 	border-radius: 15px;
 } 
-
-.ZSelected .ZAppTabBorder{
+.ZWidgetTitle  {
+	color: white !important;
+}
+.ZAppTabBorder{
 	color: white !important;
 }
 
@@ -470,7 +488,7 @@ BODY									{	margin:0px; 	}
 .ZmAppChooser								{	margin:0px !important;		}
 .ZAppTabBorder								{	@AppTabRoundCorners@		}
 .ZAppTabBorder .ZLeftIcon 					{	@AppTabLeftIcon@			}
-.ZAppTabBorder .ZWidgetTitle 				{	@AppTabWidgetTitle@;		}
+.ZAppTabBorder {	@AppTabWidgetTitle@;		}
 .ZAppTabBorder .ZDropDown 					{	@AppTabDropDown@ 			}
 
 .ZSelectedPrev .ZAppTabBorder			 	{	@AppTabBorder-selectedPrev@	}
@@ -495,7 +513,7 @@ BODY									{	margin:0px; 	}
 .ZmShareToolBar .ZToolbarTable				{	height:100%;	}
 
 .ZNewButton .ZToolbarButtonBorder 			{	@ToolbarNewButtonBorder@				}
-.ZNewButton.ZHover .ZToolbarButtonBorder	{	@ToolbarButtonBorder-hover@				}
+.ZNewButton .ZToolbarButtonBorder	{	@ToolbarButtonBorder-hover@				}
 .ZNewButton.ZActive .ZToolbarButtonBorder 	{	@ToolbarButtonBorder-active@			}
 
 #IFNDEF MSIE_LOWER_THAN_9
@@ -599,6 +617,10 @@ TEXTAREA .BannerBar * {
 	padding-top:5px;
 }
 
+.ZButtonBorder {
+	background: grey !important;
+}
+
 /* styles for the HTML client */
 INPUT[type="text"],
 INPUT[type="password"]		{	@FieldBorder@	}
@@ -615,7 +637,7 @@ SELECT						{	@FieldBorder@	}
 .ZhRow TD,
 .ZhRowOdd TD				{	border-width:0px 0px 1px !important; padding-left:3px !important;	}
 /* Quick fix for selected Adv. Search button */
-.ZmSearchToolbarCell .ZSelected .ZToolbarButtonBorder{
+.ZmSearchToolbarCell .ZToolbarButtonBorder{
 #IFDEF GECKO
 	-moz-border-top-colors:#77736A #BFB8A9;
 	-moz-border-right-colors:#A7A194 #F0E9D8;
@@ -814,6 +836,13 @@ SELECT						{	@FieldBorder@	}
 .ZmContactInfoView, #zv__BDLV-main,
 .ZmPreviewView,.Conv2Header {
 	color: #FFFFFF;
+	background: #383838;
+}
+.DwtMenuTable {
+	background: #383838 !important;
+}
+
+#ZmActionMenu_conversationList_FOLDER, #ZmActionMenu_contacts_ADDRBOOK, #ZmActionMenu_calendar_CALENDAR, #ZmActionMenu_tasks_TASK, #ZmActionMenu_briefcase_BRIEFCASE {
 	background: #383838;
 }
 
